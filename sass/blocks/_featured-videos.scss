@@ -1,0 +1,19 @@
+.featured-videos {
+  background-color: #fff;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__descr {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'SFCompact', sans-serif;
+    line-height: 24px;
+    color: #788692;
+    max-width: 650px;
+
+  }
+}

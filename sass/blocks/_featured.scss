@@ -1,0 +1,108 @@
+.featured {
+  background: url("../../img/featured/featured.jpg") center/cover no-repeat;
+  height: 1080px;
+  position: relative;
+  &__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .blog-article {
+    padding-bottom: 106px;
+    &__category {
+      letter-spacing: 2px;
+      color: #fff;
+      text-align: center;
+      font-size: 11px;
+      line-height: 1;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 17px 31px;
+      background-color: var(--accent-color);
+      border-radius: 24px;
+      display: inline-block;
+      margin-bottom: 16px;
+    }
+    &__title {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 64px;
+      color: var(--white-color);
+      margin-bottom: 16px;
+      max-width: 40%;
+    }
+    &__descr {
+      font-size: 14px;
+      font-family: 'SFCompact', sans-serif;
+      font-weight: 400;
+      line-height: 21px;
+      color: var(--white-color);
+      margin-bottom: 40px;
+      max-width: 40%;
+    }
+    &__link {
+      background: var(--neptune-color);
+      transition: all .4s ease-in;
+      display: inline-block;
+      &:hover {
+        color: var(--white-color);
+        transition: all .5s ease-out;
+        opacity: .8;
+      }
+    }
+  }
+  &__stories {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 35%;
+    background-color: rgba(60, 74, 81, 0.9);
+    padding: 126px 133px;
+  }
+  &__title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    color: #fff;
+    margin-bottom: 96px;
+  }
+
+  .feature-list {
+    &__article {
+      border-bottom: 1px solid #4d5a5f;
+      display: flex;
+      align-items: flex-start;
+      padding: 32px 0;
+    }
+    &__item {
+      &:last-child .feature-list__article {
+        border-bottom: 1px solid transparent;
+      }
+    }
+    &__image {
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+    }
+    &__text {
+      margin-left: 32px;
+      padding-right: 35px;
+    }
+    &__title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 24px;
+      margin-bottom: 8px;
+    }
+    &__time {
+      color: rgba(255, 255, 255, 0.50);
+      font-family: 'SFProText-Regular', sans-serif;
+      font-size: 11px;
+      font-weight: 400;
+      display: inline-block;
+    }
+  }
+}

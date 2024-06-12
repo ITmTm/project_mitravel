@@ -21,6 +21,12 @@
     display: inline-block;
     margin-bottom: 40px;
     margin-top: 50px;
+    transition: .5s all ease-in;
+    &:hover {
+      background-color: rgba(28, 46, 61, 0.72);
+      color: var(--white-color);
+      transition: .5s all ease-in-out;
+    }
   }
   &__title {
     font-size: 80px;

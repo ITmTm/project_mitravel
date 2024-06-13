@@ -47,3 +47,15 @@ input[type="search"]::-webkit-search-results-decoration {
   letter-spacing: 2px;
   border-radius: 8px;
 }
+
+hr {
+  color: #b3b3b3;
+  height: 2px;
+  background-color: #b3b3b3;
+  border: none;
+  margin: 0;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}

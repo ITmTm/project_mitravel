@@ -1,0 +1,104 @@
+.footer {
+  padding-top: 124px;
+  background-color: #fff;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 121px;
+  }
+  &__title {
+    position: relative;
+    color: #100e0b;
+    font-family: 'SFProDisplay', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.15px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: #57A773;
+      width: 48px;
+      height: 1px;
+    }
+  }
+  &__list {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    row-gap: 10px;
+  }
+  &__link {
+    color: #959ea6;
+    font-size: 13px;
+    font-weight: 500;
+    transition: .5s all ease-in;
+    &:hover {
+      color: rgba(0, 0, 0, 0.9);
+      transition: .5s all ease-in-out;
+      text-decoration: underline;
+    }
+  }
+  .subs-form {
+    margin-top: 29px;
+    width: 368px;
+    &__field {
+      color: #1b1916;
+      text-align: left;
+      font-size: 16px;
+      font-weight: 400;
+      width: 100%;
+      opacity: 0.5;
+      height: 64px;
+      border-radius: 8px;
+      border: 1px solid #e4e4e4;
+      padding: 20px 60px 20px 30px;
+      background: url("../../img/footer/user.svg") calc(100% - 31px)center no-repeat;
+      margin-bottom: 16px;
+      &:focus {
+        outline: #000000;
+      }
+    }
+    &__btn {
+      width: 100%;
+      background-color: var(--neptune-color);
+      color: #FFF;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 2.182px;
+      text-transform: uppercase;
+      transition: .5s all ease-in;
+      padding: 22px 40px;
+      &:hover {
+        background-color: rgba(115, 175, 186, 0.7);
+        transition: .5s all ease-in-out;
+      }
+    }
+  }
+  &__bottom {
+    padding: 32px 176px;
+  }
+  &__copy {
+    color: #959ea6;
+    font-family: 'SFProText', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  &__links {
+    display: flex;
+    column-gap: 60px;
+  }
+
+  .bottom-container {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}

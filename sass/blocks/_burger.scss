@@ -1,0 +1,89 @@
+.burger {
+  width: 48px;
+  height: 10px;
+  position: relative;
+  &:hover .burger__line {
+    background-color: var(--accent-color);
+    transition: background-color .4s;
+  }
+  &__line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--white-color);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: background-color .4s;
+    &:last-child {
+      top: auto;
+      bottom: 0;
+    }
+  }
+}
+
+.menu {
+  position: fixed;
+  left: -150vw;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  transition: left 1s;
+  &--visible {
+    left: 0;
+    transition: left 1s;
+  }
+  &__nav {
+    width: 100%;
+    height: 90%;
+  }
+  &__list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    font-weight: 700;
+    font-size: 40px;
+    overflow-y: auto;
+  }
+  &__link {
+    color: var(--white-color);
+    transition: all .4s ease-in;
+    &:hover {
+      color: var(--neptune-color);
+      transition: all .4s ease-in-out;
+    }
+  }
+  &__close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    transition: .3s ease;
+    &-line {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 3px;
+      background-color: var(--white-color);
+      &:first-child {
+        transform: rotate(45deg);
+      }
+      &:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+    &:hover {
+      transition: .3s ease;
+      transform: scale(1.1);
+    }
+  }
+}

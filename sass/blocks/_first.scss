@@ -98,23 +98,7 @@
     }
   }
 
-  .main-slider {
-    overflow: hidden;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    &__text {
-      height: 120px;
-      font-size: 12px;
-      font-weight: 400;
-      letter-spacing: 2.182px;
-      text-transform: uppercase;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: var(--neptune-color);
-      color: var(--white-color);
-    }
-  }
+
 }
 
 @media (max-height: 1079px) {

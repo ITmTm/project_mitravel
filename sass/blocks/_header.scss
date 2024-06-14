@@ -57,27 +57,3 @@
   }
 }
 
-.burger {
-  width: 48px;
-  height: 10px;
-  position: relative;
-  &:hover .burger__line {
-    background-color: var(--accent-color);
-    transition: background-color .4s;
-  }
-  &__line {
-    width: 100%;
-    height: 2px;
-    background-color: var(--white-color);
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: background-color .4s;
-    &:last-child {
-      top: auto;
-      bottom: 0;
-    }
-
-  }
-}

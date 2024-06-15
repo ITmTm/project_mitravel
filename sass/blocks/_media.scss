@@ -86,7 +86,36 @@
 }
 
 @media (max-width: 992px) {
+  .menu {
+    &__list {
+      font-size: 30px;
+    }
+    &__nav {
+      height: 100%;
+    }
+  }
 
+
+  .become {
+    &__list {
+      row-gap: 40px;
+      justify-content: space-around;
+    }
+    &__item {
+      flex: 0 0 35%;
+      overflow: hidden;
+    }
+  }
+
+  .swiper-slides {
+    width: 550px;
+    min-height: 400px;
+  }
+
+  .slide-play {
+    width: 90px;
+    height: 90px;
+  }
 }
 
 @media (max-width: 768px) {

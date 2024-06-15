@@ -76,11 +76,23 @@
   background: url("../../img/first/arrow-left.svg") center/cover no-repeat;
 }
 
-.main-slider__media {
-  max-height: 275px;
-  video {
+.main-slider {
+  &__media {
+    max-height: 275px;
+    video {
     width: 502px;
     height: 100%
+    }
+  }
+  &__play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0%);
+    width: 32px;
+    height: 42px;
+    background: url("../../img/slider/play.svg") center/cover no-repeat;
+    z-index: 10;
   }
 }
 

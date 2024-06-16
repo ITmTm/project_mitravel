@@ -239,7 +239,232 @@
 }
 
 @media (max-width: 576px) {
+  .social__item {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
 
+  .menu {
+    width: 75%;
+  }
+
+  .first {
+    min-height: auto;
+    height: auto;
+    &__container {
+      padding-bottom: 50px;
+    }
+    &__title {
+      max-width: none;
+    }
+    &__descr {
+      font-size: 14px;
+      max-width: none;
+    }
+    &__bottom {
+      position: static;
+      transform: none;
+      width: 100%;
+      flex-direction: column-reverse;
+      align-items: stretch;
+    }
+
+    .search-form {
+      width: 100%;
+    }
+
+    .main-slider .swiper-container {
+      width: 100%;
+    }
+
+    .swiper-slide {
+      min-height: 320px;
+    }
+
+    .main-slider__play {
+      top: 48%;
+    }
+
+    .search-form__button {
+      right: 40px;
+    }
+
+    .main-slider__media {
+      img {
+        width: 100%;
+      }
+    }
+
+    .main-slider__media {
+      max-height: 200px;
+      video {
+        width: 100%;
+      }
+    }
+  }
+
+  .become {
+    &__title {
+      max-width: none;
+      font-size: 60px;
+      line-height: 65px;
+      margin-bottom: 40px;
+    }
+    &__list {
+      flex-direction: column;
+    }
+    &__item {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    &__text {
+      padding-left: 40px;
+    }
+  }
+
+  .featured {
+    .blog-article {
+      padding-bottom: 50px;
+      &__title {
+        max-width: none;
+        font-size: 60px;
+        line-height: 65px;
+      }
+      &__descr {
+        font-size: 14px;
+        max-width: none;
+      }
+    }
+    &__stories {
+      padding: 30px;
+    }
+
+
+  }
+
+  .featured-videos {
+    padding-top: 50px;
+    padding-bottom: 0;
+    .slider-container {
+      padding: 50px 0;
+      margin-top: 20px;
+    }
+    .swiper-slide {
+      width: calc(100% - 60px);
+      &-active {
+        transform: none;
+      }
+    }
+
+    .slide-play {
+      width: 70px;
+      height: 70px;
+      left: 15px;
+      top: 15px;
+    }
+
+    .slide-title {
+      font-size: 25px;
+      line-height: 30px;
+      padding: 0 0 20px 20px;
+    }
+
+
+  }
+
+  .newsletter {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &-content {
+      padding: 30px 15px;
+      flex-direction: column;
+    }
+    .section-title {
+      max-width: none;
+      font-size: 45px;
+      line-height: 55px;
+    }
+    .subscribe-form {
+      position: static;
+      transform: none;
+      width: 100%;
+      padding-top: 30px;
+      margin-top: 30px;
+      height: auto;
+      &__field {
+        font-size: 14px;
+        width: calc(100% - 30px);
+      }
+      &__btn {
+        padding: 30px 60px;
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .inspirations {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    &__descr {
+      margin: 24px auto 50px auto;
+    }
+  }
+
+  .footer {
+    padding-top: 40px;
+    &__container {
+      margin-bottom: 40px;
+    }
+    &__column {
+      width: 100%;
+      margin-bottom: 40px;
+      &:last-child {
+        margin-top: 0;
+      }
+    }
+    &__column {
+      text-align: center;
+      margin-bottom: 40px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &__title {
+      font-size: 16px;
+      &::after {
+        width: 80px;
+        transform: translate(-50%, 0);
+        left: 50%;
+      }
+    }
+    &__link {
+      font-size: 16px;
+    }
+    &__list {
+      align-items: center
+    }
+
+    .subs-form {
+      width: 100%;
+    }
+
+    &__copy {
+      max-width: none;
+      width: 100%;
+    }
+
+    .bottom-container {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__links {
+      margin-top: 20px;
+    }
+  }
 }
 
 @media (max-width: 375px) {

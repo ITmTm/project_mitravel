@@ -27,7 +27,7 @@ Layout a landing page using Pixel Perfect and Adaptive
 <hr>
 
 ## Using Libraries
-[![SCSS](https://img.shields.io/badge/sass(scss)-%23bf4080?style=for-the-badge&logo=sass)](https://sass-lang.com/)
+[![SASS](https://img.shields.io/badge/SCSS-%233e4659?logo=SASS&label=SASS)](https://sass-lang.com/)
 [![Swiper](https://img.shields.io/badge/Swiper-3d124d?logo=Swiper)](https://swiperjs.com/)
 [![inputMask](https://img.shields.io/badge/Inputmask-yellow?logo=Inputmask)](https://robinherbots.github.io/Inputmask/)
 

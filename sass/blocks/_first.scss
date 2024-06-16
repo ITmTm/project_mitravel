@@ -1,7 +1,7 @@
 .first {
   height: 100vh;
   min-height: 660px;
-  background: url("../../img/first/first-bg.jpg") center/cover no-repeat;
+  background: url("../img/first/first-bg.jpg") center/cover no-repeat;
   color: var(--white-color);
   &__container {
     position: relative;
@@ -90,7 +90,7 @@
     &__button {
       width: 18px;
       height: 18px;
-      background: url("../../img/first/search.svg") center/cover no-repeat;
+      background: url("../img/first/search.svg") center/cover no-repeat;
       position: absolute;
       right: 62px;
       top: 50%;

@@ -234,10 +234,13 @@
                         <h2 class="newsletter__title section-title">Sign Up Our Newsletter</h2>
                         <p class="newsletter__descr">The state of Utah in the United States is home to lots of beautiful National Parks, & Bryce Canyon National Park ranks as three of the most magnificent.</p>
                     </div>
-                    <form action="/" class="newsletter__form subscribe-form">
+                    <form action="#" class="newsletter__form subscribe-form">
+                        <input type="hidden" name="admin_email[]" value="stafr951@gmail.com">
+                        <input type="hidden" name="form_subject" value="Заявка с сайта Mitravel">
+<!--                        <input type="hidden" name="Название формы" value="Материалы с прошлой конференции">-->
                         <input class="subscribe-form__field" type="text" name="name" placeholder="Name">
-                        <input class="subscribe-form__field" type="email" name="email" placeholder="Email">
-                        <input class="subscribe-form__field" type="tel" name="tel" placeholder="Phone Number">
+                        <input class="subscribe-form__field" type="email" name="email" placeholder="Email" data-validate-field="email">
+                        <input class="subscribe-form__field" type="tel" name="tel" placeholder="Phone Number" data-validate-field="tel">
                         <button class="btn btn-reset subscribe-form__btn">Sign Up Now</button>
                     </form>
                 </div>
@@ -445,8 +448,8 @@
             </nav>
             <div class="footer__column">
                 <h2 class="footer__title">Subscribe Now</h2>
-                <form action="/" class="subs-form">
-                    <input type="email" name="email" placeholder="Your email" class="subs-form__field">
+                <form action="#" class="subs-form">
+                    <input type="email" name="email" placeholder="Your email" class="subs-form__field" data-validate-field="email">
                     <button class="btn-reset btn subs-form__btn">Subscribe Now</button>
                 </form>
             </div>
@@ -470,6 +473,8 @@
 
 
 <script src="js/swiper.min.js"></script>
+<script src="js/inputmask.min.js"></script>
+<script src="js/just-validate.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

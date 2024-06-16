@@ -291,6 +291,7 @@
     }
 
     .main-slider__media {
+      font-size: 0;
       img {
         width: 100%;
       }
@@ -469,4 +470,135 @@
 
 @media (max-width: 375px) {
 
+  .container {
+    padding: 0 15px;
+  }
+
+  .menu {
+    min-height: 550px;
+    width: 100%;
+    &__list {
+      row-gap: 30px;
+    }
+  }
+
+  .header {
+    &__container {
+      padding: 30px;
+    }
+    &__social {
+      display: none;
+    }
+  }
+
+  .first {
+    &__container {
+      padding-top: 90px;
+      padding-bottom: 30px;
+    }
+    &__link {
+      font-size: 10px;
+      padding: 10px 20px;
+    }
+    &__title {
+      font-size: 50px;
+      line-height: 60px;
+    }
+    &__slider {
+      &-btn {
+        left: 25px;
+      }
+    }
+    .btn-right {
+      right: 25px;
+      left: auto;
+    }
+    .search-form {
+      margin-top: 10px;
+      &__field {
+        padding-left: 30px;
+        padding-right: 45px;
+      }
+      &__button {
+        right: 20px;
+      }
+    }
+  }
+
+  .become {
+    padding: 30px 0;
+    &__title {
+      font-size: 50px;
+      line-height: 60px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .featured {
+    padding-top: 30px;
+
+    .blog-article__title {
+      font-size: 51px;
+      line-height: 60px;
+    }
+
+    &__title {
+      font-size: 50px;
+      text-align: center;
+      line-height: 60px;
+    }
+
+    .feature-list__text {
+      padding-right: 10px;
+      margin-left: 20px;
+    }
+
+    &-videos {
+      padding-top: 30px;
+      &__title {
+        font-size: 50px;
+        line-height: 60px;
+      }
+
+      .swiper-slide {
+        width: calc(100% - 30px);
+      }
+
+      .slider-container {
+        padding: 30px 0;
+      }
+    }
+  }
+
+  .newsletter {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .section-title {
+      margin-bottom: 30px;
+    }
+  }
+
+  .inspirations {
+    padding-top: 30px;
+    .section-title {
+      font-size: 50px;
+      line-height: 60px;
+    }
+    &__descr {
+      margin: 24px auto 30px auto;
+    }
+    &__text {
+      padding-left: 20px;
+      padding-bottom: 30px;
+    }
+  }
+
+  .footer {
+    &__container {
+      margin-bottom: 30px;
+    }
+    &__bottom {
+      padding: 30px 0;
+    }
+  }
 }
